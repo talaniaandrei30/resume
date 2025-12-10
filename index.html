@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #150909;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 1rem; /* Fixed from '2rex' to '1rem' for validity */
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Changed to center for better alignment */
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        .banner {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .banner h1 {
+            margin: 0;
+        }
+
+        aside {
+            background-color: #989292;
+            padding: 1rem;
+            width: 200px; /* Slightly adjusted for better fit */
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow-y: auto;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 160px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        aside h2 {
+            margin-top: 0;
+        }
+
+        aside ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        aside a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        aside a:hover {
+            color: #666;
+        }
+
+        main {
+            margin-left: 220px; /* Adjusted to match aside width + padding */
+            padding: 1rem;
+            background-color: rgb(250, 254, 254);
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            aside {
+                position: static;
+                width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+
+            main {
+                margin-left: 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-pic {
+                width: 100px;
+                height: 120px;
+            }
+
+            aside {
+                padding: 0.5rem;
+            }
+
+            main {
+                padding: 0.5rem;
+            }
+
+            section {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Welcome to My Personalized Resume</h1>
+        </div>
+    </header>
+
+    <aside>
+        <img src="upload/1x1.jpg" alt="Profile Picture" class="profile-pic"> 
+        <h2>Outline</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="about" style="background-color:#eae5e5;">
+            <h2>About</h2>
+            <p>I am Jan Andrei Talania from BRGY: Bungro, Magsingal, Ilocos Sur. Student at the Ilocos Sur Community College. I am a second year college student. My course is BS Information Technology. I am playing basketball and my favorite food is adobo. My father and mother are farmers.</p>
+        </section>
+
+        <section id="projects" style="background-color:#e6e4e4;">
+            <h2>Projects</h2>
+            <p>To create custom websites to help businesses do better online.</p>
+        </section>
+
+        <section id="skills" style="background-color:#e6e4e4;">
+            <h2>Skills</h2>
+            <ul>
+                <li>Active listening</li>
+                <li>Caring</li>
+                <li>Inspiring</li>
+                <li>Writing</li>
+                <li>Drawing</li>
+            </ul>
+        </section>
+
+        <section id="contact" style="background-color:#f0eded;">
+            <h2>Contact</h2>
+            <p><a href="mailto:talaniaandrei@gmail.com">talaniaandrei@gmail.com</a></p>
+            <p>09293505698</p>
+        </section>
+    </main>
+</body>
+</html>
